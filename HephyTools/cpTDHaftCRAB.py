@@ -250,11 +250,13 @@ class CMCHandler():
         ntree = 50./ float( len(tree_files) )
 
         count = 0.
+        rem = 0
         for file in tree_files:
             count += ntree
+            rem += 1
             print('\r[{0}>{1}]'.format('='*int(count),' '*(50-int(count) )), end='')    
             os.remove('/'.join( [self.dest,file] ) )
-        print('   Finished')
+        print('   Finished. Removed {0} files'.format(rem) )
         
         if rtype == 'mc':
 

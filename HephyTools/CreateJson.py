@@ -52,6 +52,7 @@ for data in raw_data:
 		else:
 			data_struct[current][key] = {'datacard':dsets[current][key]['datacard']}
 			data_struct[current][key]['step_1'] = dsets[current][key]['step_1']
+			data_struct[current][key]['das_url'] = dsets[current][key]['das_url']
 			data_struct[current][key]['prod_label'] = dsets[current][key]['prod_label']
 
 with open('datasets.json','wb') as FSO:

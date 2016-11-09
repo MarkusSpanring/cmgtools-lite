@@ -35,11 +35,10 @@ def getDataset(input_tag):
             
 
             if dsets[sets][el]['das_url'] != '':
-                tag = '{0}_{1}'.format( el,dsets[sets][el]['prod_label'] )
-                if tag == input_tag:
+                if el == input_tag:
                  
-                    Datasets[tag] ={'url': dsets[sets][el]['das_url']}
-                    Datasets[tag]['prod_label'] = dsets[sets][el]['prod_label']
+                    Datasets[el] ={'url': dsets[sets][el]['das_url']}
+                    Datasets[el]['prod_label'] = dsets[sets][el]['prod_label']
 
 
     if Datasets == {}: 
@@ -50,13 +49,14 @@ def getDataset(input_tag):
     return Datasets
 
 def getComponent(Datasets, name, readCache):
-    return kreator.makeComponentHEPHY('{0}_{1}'.format(name, timestamp()), Datasets[name]['url'], "PRIVATE", ".*root", "phys03",1.0, readCache= readCache)
+    return kreator.makeComponentHEPHY('{0}_{1}_{2}'.format(name, Datasets[name]['prod_label'], timestamp()), Datasets[name]['url'], "PRIVATE", ".*root", "phys03",1.0, readCache= readCache)
 
 def getDataComponent(Datasets, name, readCache):
     dataDir = "$CMSSW_BASE/src/CMGTools/RootTools/data/"
-    json = dataDir + 'Cert_271036-276811_13TeV_PromptReco_Collisions16_JSON.txt'
+    json = dataDir + 'Cert_271036-280385_13TeV_PromptReco_Collisions16_JSON.txt' #RunG
+    #json = dataDir + 'Cert_271036-276811_13TeV_PromptReco_Collisions16_JSON.txt'
 
-    return kreator.makeDataComponentHEPHY('{0}_{1}'.format(name, timestamp()), Datasets[name]['url'], "PRIVATE", ".*root", "phys03",
+    return kreator.makeDataComponentHEPHY('{0}_{1}_{2}'.format(name, Datasets[name]['prod_label'], timestamp()), Datasets[name]['url'], "PRIVATE", ".*root", "phys03",
                                           readCache = readCache,
                                           json = json)
 #####################################################################################################
@@ -78,6 +78,7 @@ parser.add_option("--lumiMask", dest="lumiMask", help="lumi mask (for data)", de
 Datasets = getDataset(options.tag)
 
 if Datasets[options.tag]['prod_label'] == 'DATA':
+
     selectedComponents = [getDataComponent(Datasets,options.tag, False)]
 else:
     selectedComponents = [getComponent(Datasets,options.tag, False)]
@@ -86,7 +87,7 @@ os.system("scram runtime -sh")
 os.system("source /cvmfs/cms.cern.ch/crab3/crab.sh")
 
 os.environ["CMG_PROD_LABEL"]  = Datasets[options.tag]['prod_label']
-os.environ["CMG_REMOTE_DIR"]  = '{0}_{1}'.format(options.tag, timestamp())
+os.environ["CMG_REMOTE_DIR"]  = '{0}_{1}_{2}'.format(options.tag, Datasets[options.tag]['prod_label'] ,timestamp())
 os.environ["CMG_VERSION"] = options.cmg_version
 os.environ["CMG_UNITS_PER_JOB"] = str(options.unitsPerJob)
 os.environ["CMG_LUMI_MASK"] = options.lumiMask if options.lumiMask else "None"

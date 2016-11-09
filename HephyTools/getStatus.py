@@ -62,7 +62,6 @@ def addInformation(folders, information):
     return information
 
 def removeInformation(folders, information):
-
     for i,info in enumerate(information):
         exists = False
         for folder in folders:
@@ -70,7 +69,6 @@ def removeInformation(folders, information):
                 exists = True
         if not exists:
             information.pop(i)
-
     return information
 
 def writeDASurl(tag,das_url):
@@ -221,6 +219,8 @@ def getStatus(path):
                 colorprint(line, 'red')
             elif 'finished' in line: 
                 colorprint(line, 'green')
+                if not '100.0' in line:
+                    JCOMP = False
             elif 'transferring' in line:
                 colorprint(line, 'yellow')
             else:

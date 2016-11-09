@@ -120,7 +120,7 @@ bool diLeptonSelector::filter(edm::Event& iEvent, const edm::EventSetup& params)
 	 {
 	   counterMuons++;
 	 }
-       if(it.pt() > muonSoftPtCut_ && abs(it.eta()) < muonEtaCut_) 
+       else if(it.pt() > muonSoftPtCut_ && abs(it.eta()) < muonEtaCut_) 
 	 {
 	   counterSoftMuons++;
 	 }
