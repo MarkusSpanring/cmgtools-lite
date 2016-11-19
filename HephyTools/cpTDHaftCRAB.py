@@ -57,51 +57,31 @@ class CMCHandler():
         self.files = files
 
     def validateCopy(self):
-        src_files = {'tree':[], 'Skim':[]}
-        dest_files = {'tree':[], 'Skim':[]}
-        miss_files = {'tree':[], 'Skim':[], 'merg':[]}
+        src_files = []
+        dest_files = []
+
         for fldr in self.files.keys():
             for f in self.files[fldr]['files']:
-                if 'tree' in f or 'Skim' in f: 
-                    nfile = int(''.join([s for s in f if s.isdigit()]))
-                    if 'tree' in f:
-                        src_files['tree'].append(nfile)
-                    elif 'Skim' in f:
-                        src_files['Skim'].append(nfile)
+                nfile = ''.join([s for s in f if s.isdigit()])
+                if nfile == '': nfile = '0'
+                if 'tree' in f:
+                    src_files.append( int(nfile,0) )
 
-
-        if self.getFiledDiff(src_files['tree'], src_files['Skim'], 'treefiles', 'Skimfiles'):
-            return False
 
         for f in os.listdir( self.dest ):
-            nfile = int(''.join([s for s in f if s.isdigit()]))
-            if 'tree' in f:
-                dest_files['tree'].append(nfile)
-            elif 'Skim' in f:
-                dest_files['Skim'].append(nfile)
+            nfile = ''.join([s for s in f if s.isdigit()])
+            if nfile == '': nfile = '0'
+            if 'tree_unmerged' in f:
+                dest_files.append( int(nfile,0) )
 
-        if self.getFiledDiff(dest_files['tree'], dest_files['Skim'], 'treefiles', 'Skimfiles'):
-            return False
+        src_files.sort()
+        dest_files.sort()
 
-        if self.getFiledDiff(src_files['tree'], dest_files['tree'], 'source files', 'dest files'):
-            return False
+        for i in dest_files:
+            src_files.pop( src_files.index(i) )
 
-        return True
+        return src_files
 
-
-    def getFiledDiff(self, files_1, files_2, strF1 = 'files_1', strF2 = 'files_2'):
-        if sorted(files_1) == sorted(files_2):
-            return False
-        else:
-
-            if len(files_1) >= len(files_2):
-                print('Missing {0}:'.format(strF2 ))
-                print(list(set(files_1) - set(files_2)))
-            else:
-                print('Missing {0}:'.format(strF1) )
-                print(list(set(files_2) - set(files_1)))
-
-            return True      
 
 
 
@@ -122,7 +102,7 @@ class CMCHandler():
 
         
         trees = self.files
-        cp_cmd = 'lcg-cp srm://hephyse.oeaw.ac.at'
+        cp_cmd = 'lcg-cp -v srm://hephyse.oeaw.ac.at'
         cmd_list = []
         for folder in trees:
             path = trees[folder]['path']
@@ -250,13 +230,13 @@ class CMCHandler():
         ntree = 50./ float( len(tree_files) )
 
         count = 0.
-        rem = 0
+
         for file in tree_files:
             count += ntree
-            rem += 1
+
             print('\r[{0}>{1}]'.format('='*int(count),' '*(50-int(count) )), end='')    
             os.remove('/'.join( [self.dest,file] ) )
-        print('   Finished. Removed {0} files'.format(rem) )
+        print('   Finished. ')
         
         if rtype == 'mc':
 
@@ -294,6 +274,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', help='Tag of dataset to copy', type=str, metavar = 'TAG', required = True)
     parser.add_argument('-u', help='dpns-Username who createt dataset', type=str, metavar = 'dpns-USERNAME', required = True)
     parser.add_argument('-f', help='Force overwrite', action='store_true')
+    parser.add_argument('-m', help='Merge only', action='store_true')
     parser.add_argument('-t', help='', type=str, metavar = 'RUNTYPE',choices = ['mc','data'], default = 'mc')
 
     args = vars(parser.parse_args())
@@ -301,23 +282,27 @@ if __name__ == '__main__':
     Dset = args['d']
     rtype = args['t']
     dpnsUser = args['u']
+    merge = args['m']
 
     source = '/dpm/oeaw.ac.at/home/cms/store/user/{0}/cmgTuples/{1}'.format( dpnsUser, Dset )
     dest = '/data/higgs/data_2016/cmgTuples/{0}'.format( Dset )
 
     ch = CMCHandler(source, dest)
-    ch.copyFiles(ftype = 'tree',
-                 recreate = args.get('f',False))
-    
+    if not merge:
+        ch.copyFiles(ftype = 'tree',
+                     recreate = args.get('f',False))
+
+    miss = ch.validateCopy()
+    if miss != []:
+        print( 'There are files missing: {0}'.format( miss ) )
+        sys.exit()
+
     if rtype == 'mc':
         ch.copyFiles(ftype = 'Skim',
                      ignore = True,
                      max_proc=8)
    
-    # if ch.validateCopy():
-    #     print('All files copied from DPM')
-    # else:
-    #     sys.exit()    
+    
 
         ch.getSkimCount()
 
