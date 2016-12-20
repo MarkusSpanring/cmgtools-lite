@@ -117,9 +117,9 @@ leptonTypeH = NTupleObjectType("leptonH", baseObjectTypes = [ leptonType ], vari
     NTupleVariable("POG_SPRING15_25ns_v1_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING15_25ns_v1_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING15 25ns cut-based v1 Veto ID"),
     NTupleVariable("POG_SPRING15_25ns_v1_ConvVeto_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING15_25ns_v1_ConvVeto_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING15 25ns cut-based v1 ConvVeto Veto ID"),
     NTupleVariable("POG_SPRING15_25ns_v1_ConvVetoDxyDz_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING15_25ns_v1_ConvVetoDxyDz_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING15 25ns cut-based v1 ConvVetoDxyDz Veto ID"),
-     # NTupleVariable("POG_SPRING16_25ns_v1_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 Veto ID"),
-     # NTupleVariable("POG_SPRING16_25ns_v1_ConvVeto_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_ConvVeto_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 ConvVeto Veto ID"),
-     # NTupleVariable("POG_SPRING16_25ns_v1_ConvVetoDxyDz_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_ConvVetoDxyDz_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 ConvVetoDxyDz Veto ID"),
+    NTupleVariable("POG_SPRING16_25ns_v1_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 Veto ID"),
+    NTupleVariable("POG_SPRING16_25ns_v1_ConvVeto_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_ConvVeto_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 ConvVeto Veto ID"),
+    NTupleVariable("POG_SPRING16_25ns_v1_ConvVetoDxyDz_Veto",   lambda lepton : lepton.cutBasedId('POG_SPRING16_25ns_v1_ConvVetoDxyDz_Veto') if abs(lepton.pdgId()) == 11 else 1, help="POG SPRING16 25ns cut-based v1 ConvVetoDxyDz Veto ID"),
 
 
     NTupleVariable("superClusterEta", lambda x : x.superCluster().eta() if abs(x.pdgId())==11 else -100, help="Electron supercluster pseudorapidity"),

@@ -7,6 +7,7 @@ common = [
     'keep patPackedTriggerPrescales_*_*_*',
     'keep patElectrons_slimmedElectrons_*_*',
     'keep patJets_slimmedJets_*_*',
+    #'keep *_*_*_MVAMET',
     'keep patJets_patJetsReapplyJEC_*_*',
     'keep patMETs_slimmedMETs_*_*',
     'keep patMuons_slimmedMuons_*_*',

@@ -1,0 +1,17 @@
+{
+    "SingleMuonRun2016D_PromptReco_v2MINIAOD_DATA_160926": "/SingleMuon/mspanrin-SingleMuonRun2016D_PromptReco_v2MINIAOD_DATA_160926-65fc7dfbbecbe0b92df1c82ef853e001/USER",
+"SingleMuonRun2016G_PromptReco_v2MINIAOD_DATA_160926":"/SingleMuon/mspanrin-SingleMuonRun2016G_PromptReco_v1MINIAOD_DATA_161102-fdd8a08993bf292ded124ba21b1883ad/USER", 
+    "DY2JetsToLL_M_50_madgraphMLM_MCSpring16_160919": "/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY2JetsToLL_M_50_madgraphMLM_MCSpring16_160919-b67a92096661e25d9c6a5c867fc14d89/USER", 
+    "VBF": "/VBFHToTauTau_M125_13TeV_powheg_pythia8/mspanrin-VBFHToTauTau_M125_powheg_MCSpring16_reHLT_161022-b67a92096661e25d9c6a5c867fc14d89/USER", 
+    "SingleMuonRun2016C_PromptReco_v2MINIAOD_DATA_160926": "/SingleMuon/mspanrin-SingleMuonRun2016C_PromptReco_v2MINIAOD_DATA_160926-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "SingleElectronRun2016D_PromptReco_v2MINIAOD_DATA_160926": "/SingleElectron/mspanrin-SingleElectronRun2016D_PromptReco_v2MINIAOD_DATA_160926-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "TauRun2016B_PromptReco_v2MINIAOD_DATA_161005": "/Tau/mspanrin-TauRun2016B_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "TauRun2016C_PromptReco_v2MINIAOD_DATA_161005": "/Tau/mspanrin-TauRun2016C_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "SingleElectronRun2016B_PromptReco_v2MINIAOD_DATA_160926": "/SingleElectron/mspanrin-SingleElectronRun2016B_PromptReco_v2MINIAOD_DATA_160926-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "SingleElectronRun2016C_PromptReco_v2MINIAOD_DATA_160926": "/SingleElectron/mspanrin-SingleElectronRun2016C_PromptReco_v2MINIAOD_DATA_160926-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "TauRun2016D_PromptReco_v2MINIAOD_DATA_161005": "/Tau/mspanrin-TauRun2016D_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "DY1JetsToLL_M_50_madgraphMLM_MCSpring16_160919": "/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY1JetsToLL_M_50_madgraphMLM_MCSpring16_160919-b67a92096661e25d9c6a5c867fc14d89/USER", 
+    "SingleMuonRun2016B_PromptReco_v2MINIAOD_DATA_160921": "/SingleMuon/mspanrin-SingleMuonRun2016B_PromptReco_v2MINIAOD_DATA_160921-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
+    "TT_powheg_MCSpring16_160919": "/TT_TuneCUETP8M1_13TeV-powheg-pythia8/mspanrin-TT_powheg_MCSpring16_160919-b67a92096661e25d9c6a5c867fc14d89/USER",
+    "VBF": "/VBFHToTauTau_M125_13TeV_powheg_pythia8/mspanrin-VBFHToTauTau_M125_powheg_MCSpring16_reHLT_161022-b67a92096661e25d9c6a5c867fc14d89/USER"
+}
