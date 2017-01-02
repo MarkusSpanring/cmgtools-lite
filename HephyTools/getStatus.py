@@ -242,7 +242,7 @@ if __name__ == '__main__':
     user = os.environ['USER']
 
     
-    paths =['{0}/src/CMGTools/H2TauTau/prod/MCSpring16/crab_MCSpring16'.format(os.environ['CMSSW_BASE']),
+    paths =['{0}/src/CMGTools/H2TauTau/prod/MC/crab_MCSpring16'.format(os.environ['CMSSW_BASE']),
             '{0}/src/CMGTools/H2TauTau/prod/MCSpring16/crab_MCSpring16_reHLT'.format(os.environ['CMSSW_BASE']),
             '{0}/src/CMGTools/H2TauTau/prod/sync/crab_MCSpring16_reHLT'.format(os.environ['CMSSW_BASE']),
             '{0}/src/CMGTools/H2TauTau/prod/sync/crab_MCSpring16_reHLT_2'.format(os.environ['CMSSW_BASE']),
@@ -254,17 +254,14 @@ if __name__ == '__main__':
            ]
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-ptime', help='Time between two status checks.', type=int, metavar = 'INT',default=3000)
-    parser.add_argument('-nrep', help='Number of status checks.', type=int, metavar = 'INT',default=1)
-    parser.add_argument('-res', help='Resubmit failed job?', action='store_true')
+    parser.add_argument('--ptime',dest='ptime', help='Time between two status checks.', type=int, metavar = 'INT',default=3000)
+    parser.add_argument('--nrep',dest='rep', help='Number of status checks.', type=int, metavar = 'INT',default=1)
+    parser.add_argument('--res',dest='resubmit', help='Resubmit failed job?', action='store_true')
 
-    args = vars(parser.parse_args())
-
-
-    ptime = args.get('ptime',3000)
-    nrep = args.get('nrep',1)
-    res = args.get('res',False)
-    for i in xrange(nrep):
-        updateInformationFile(paths, RESUB=res)
-        if nrep > 1 and i != nrep-1:
-            time.sleep(ptime)
+    args = parser.parse_args()
+    if args.resubmit:
+        print 'Resubmiting jobs every {0}sec {1} time(s).'.format(args.ptime, args.rep)
+    for i in xrange(args.rep):
+        updateInformationFile(paths, RESUB=args.resubmit)
+        if args.rep > 1 and i != args.rep-1:
+            time.sleep(args.ptime)

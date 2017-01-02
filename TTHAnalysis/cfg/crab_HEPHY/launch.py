@@ -24,6 +24,17 @@ def timestamp():
 
     return ''.join([y,m,d])
 
+def showSamples():
+    cmssw_base = os.environ['CMSSW_BASE']
+    with open('{0}/src/CMGTools/HephyTools/datasets.json'.format(cmssw_base) ,'rb') as FSO:
+        dsets=json.load(FSO)
+    
+    for tranche in dsets.keys():
+        for sample in dsets[tranche].keys():
+            if dsets[tranche][sample]['das_url'] != '':
+                print sample
+
+
 def getDataset(input_tag):
     cmssw_base = os.environ['CMSSW_BASE']
     with open('{0}/src/CMGTools/HephyTools/datasets.json'.format(cmssw_base) ,'rb') as FSO:
@@ -53,8 +64,7 @@ def getComponent(Datasets, name, readCache):
 
 def getDataComponent(Datasets, name, readCache):
     dataDir = "$CMSSW_BASE/src/CMGTools/RootTools/data/"
-    json = dataDir + 'Cert_271036-280385_13TeV_PromptReco_Collisions16_JSON.txt' #RunG
-    #json = dataDir + 'Cert_271036-276811_13TeV_PromptReco_Collisions16_JSON.txt'
+    json = dataDir + 'Cert_271036-284044_13TeV_PromptReco_Collisions16_JSON.txt'
 
     return kreator.makeDataComponentHEPHY('{0}_{1}_{2}'.format(name, Datasets[name]['prod_label'], timestamp()), Datasets[name]['url'], "PRIVATE", ".*root", "phys03",
                                           readCache = readCache,
@@ -64,16 +74,20 @@ def getDataComponent(Datasets, name, readCache):
 
 
 
-parser = OptionParser(usage="python launch.py [options] component1 [ component2 ...]",
+parser = OptionParser(usage="python launch.py --sample SAMPLE]",
                       description="Launch heppy jobs with CRAB3. Components correspond to the variables defined in heppy_samples.py (their name attributes)")
-parser.add_option("--tag", dest="tag", help="sample TAG")
+parser.add_option("--sample", dest="tag", help="Tag of sample")
 parser.add_option("--cmg_version", dest="cmg_version", help="CMG version", default="CMGTools-from-CMSSW_8_0_20")
 parser.add_option("--unitsPerJob", dest="unitsPerJob", help="Nr. of units (files) / crab job", type="int", default=1)
 parser.add_option("--totalUnits", dest="totalUnits", help="Total nr. of units (files)", type="int", default=None)
 parser.add_option("--inputDBS", dest="inputDBS", help="dbs instance", default="phys03")
 parser.add_option("--lumiMask", dest="lumiMask", help="lumi mask (for data)", default=None)
+parser.add_option("--show", dest="show", help="Show availabele samples", action = 'store_true')
 ( options, args ) = parser.parse_args()
 
+if options.show:
+    showSamples()
+    sys.exit()
 
 Datasets = getDataset(options.tag)
 

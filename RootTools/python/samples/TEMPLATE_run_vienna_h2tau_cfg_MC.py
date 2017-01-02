@@ -27,8 +27,8 @@ jetAna.minLepPt = 10
 jetAna.jetPt = 20
 jetAna.jetEta = 4.7
 
-jetAna.mcGT     = "Spring16_25nsV6_MC"
-jetAna.dataGT   = "Fall15_25nsV2_DATA"
+jetAna.mcGT     = "Spring16_23Sep2016V2_MC"
+jetAna.dataGT   = "Spring16_23Sep2016BCDV2_DATA"
 jetAna.do_mc_match = True
 jetAna.smearJets = False #should be false in susycore, already                                      
 jetAna.calculateSeparateCorrections = True 
@@ -78,7 +78,7 @@ ttHEventAna = cfg.Analyzer(
 #from CMGTools.TTHAnalysis.samples.samples_13TeV_PHYS14  import *
 #from CMGTools.RootTools.samples.samples_13TeV_74X_privat  import *
 
-TriggerTag = 'HLT2'
+TriggerTag = 'HLT'
 
 triggerFlagsAna.processName = TriggerTag
 triggerFlagsAna.triggerBits = {
@@ -178,7 +178,7 @@ treeProducer = cfg.Analyzer(
 
 #from CMGTools.TTHAnalysis.samples.samples_13TeV_PHYS14 import *
 
-#from CMGTools.RootTools.samples.samples_13TeV_test import *
+
 #print "Working"
 
 #selectedComponents = [ SingleMu, DoubleElectron, TTHToWW_PUS14, DYJetsToLL_M50_PU20bx25, TTJets_PUS14 ]
@@ -226,10 +226,11 @@ selectedComponents = [ ]
 #     comp.puFileMC = 'MyMCPileupHistogram_normOfficial.root'
 # elif test==2:    
 #     # test files XX-YY of first component                  
-#     comp = SUSYGluGlu_mt_160203
-#     comp.files = ['/data/jbrandstetter/CMGTools/76X/tauMu_fullsel_tree_CMG.root']
-#     print comp.files
-#     selectedComponents = [comp]
+# from CMGTools.RootTools.samples.samples_13TeV_test import *
+# comp = VBF
+# comp.files = ['ewk.root']
+# print comp.files
+# selectedComponents = [comp]
 #     comp.splitFactor = 250
 #     comp.puFileData = '../MyDataPileupHistogram_observed_new.root'
 #     comp.puFileMC = '../MyMCPileupHistogram_normOfficial.root'

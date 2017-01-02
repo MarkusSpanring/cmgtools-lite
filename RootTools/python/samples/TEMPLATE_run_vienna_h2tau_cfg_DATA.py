@@ -27,8 +27,8 @@ jetAna.minLepPt = 10
 jetAna.jetPt = 20
 jetAna.jetEta = 4.7
 
-jetAna.mcGT     = "Spring16_25nsV6_MC"
-jetAna.dataGT   = "Spring16_25nsV6_DATA"
+jetAna.mcGT     = "Spring16_23Sep2016V2_MC"
+jetAna.dataGT   = "Spring16_23Sep2016BCDV2_DATA"
 jetAna.do_mc_match = False                                    
 jetAna.calculateSeparateCorrections = True 
 jetAna.recalibrateJets =  True #For data  
@@ -186,9 +186,14 @@ sequence = cfg.Sequence(
 
 selectedComponents = []   
 
+# from CMGTools.RootTools.samples.samples_13TeV_test import *
+# comp = data
+# comp.files = ['root://hephyse.oeaw.ac.at//dpm/oeaw.ac.at/home/cms/store/user/mspanrin/SingleMuon/SingleMuonRun2016D_23Sep2016_v1MINIAOD_DATA_161224/161223_232641/0000/outfile_newMVA_967.root']
+# print comp.files
+# selectedComponents = [comp]
+# comp.splitFactor = 250
+# selectedComponents = [comp]
 
-
-#
 from PhysicsTools.HeppyCore.framework.eventsfwlite import Events
 
 config = cfg.Config( components = selectedComponents,

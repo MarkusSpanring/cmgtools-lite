@@ -36,7 +36,7 @@ lheWeightAna = cfg.Analyzer(
 # Pick individual events (normally not in the path)
 eventSelector = cfg.Analyzer(
     EventSelector,name="EventSelector",
-    toSelect = []  # here put the event numbers (actual event numbers from CMSSW)
+    toSelect = [1310750]  # here put the event numbers (actual event numbers from CMSSW)
     )
 
 # Apply json file (if the dataset has one)
@@ -102,6 +102,7 @@ vertexAna = cfg.Analyzer(
     VertexAnalyzer, name="VertexAnalyzer",
     vertexWeight = None,
     fixedWeight = 1,
+    keepFailingEvents = True,
     verbose = False
     )
 
@@ -337,8 +338,8 @@ jetAna = cfg.Analyzer(
 
 metAna = cfg.Analyzer(
     METAnalyzer, name="metAnalyzer",
-    metCollection     = "slimmedMETs",
-    noPUMetCollection = "slimmedMETs",
+    metCollection     = "slimmedMETs::MVAMET",
+    noPUMetCollection = "slimmedMETs::MVAMET",
     copyMETsByValue = False,
     doTkMet = True,
     doMetNoPU = False,
@@ -391,7 +392,7 @@ higgsCoreSequence = [
     jetAna,
     metAna,
 #    lheWeightAna,
-    #eventSelector,
+#    eventSelector,
     jsonAna,
     pileUpAna,
     #genHiggsAna,

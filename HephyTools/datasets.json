@@ -3,157 +3,166 @@
         "ZZTo4L_powheg": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ZZTo4L_13TeV_powheg_pythia8/mspanrin-ZZTo4L_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ZZTo4L_13TeV_powheg_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "WZTo1L3Nu_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/WZTo1L3Nu_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-WZTo1L3Nu_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/WZTo1L3Nu_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "VVTo2L2Nu_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-VVTo2L2Nu_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "WZTo2L2Q_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-WZTo2L2Q_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "ZZTo2L2Q_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-ZZTo2L2Q_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "WZTo1L1Nu2Q_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-WZTo1L1Nu2Q_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "WWTo1L1Nu2Q_amcatnloFXFX": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/WWTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/mspanrin-WWTo1L1Nu2Q_amcatnloFXFX_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/WWTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }
     }, 
-    "TT": {
-        "TT_powheg": {
+    "Signal": {
+        "VBFHToTauTau_M125_powheg": {
             "step_1": {
-                "status": "done", 
-                "time": "161128"
+                "status": "", 
+                "time": ""
             }, 
-            "das_url": "/TT_TuneCUETP8M1_13TeV-powheg-pythia8/mspanrin-TT_powheg_MCSpring16_161128-27d8d2fc80276a6016b1988a8ef5454e/USER", 
-            "datacard": "/TT_TuneCUETP8M1_13TeV-powheg-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext4-v1/MINIAODSIM", 
-            "prod_label": "MCSpring16"
+            "das_url": "", 
+            "datacard": "/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14-v1/MINIAODSIM", 
+            "prod_label": "MCSpring16_reHLT"
+        }, 
+        "GluGluHToTauTau_M125_powheg": {
+            "step_1": {
+                "status": "", 
+                "time": ""
+            }, 
+            "das_url": "", 
+            "datacard": "/GluGluHToTauTau_M125_13TeV_powheg_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14-v1/MINIAODSIM", 
+            "prod_label": "MCSpring16_reHLT"
         }
     }, 
     "DY": {
         "DY2JetsToLL_M_50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY2JetsToLL_M_50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY2JetsToLL_M_50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DYJetsToLL_M_10to50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_10to50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_10to50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DY1JetsToLL_M_50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY1JetsToLL_M_50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY1JetsToLL_M_50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "EWKZ2Jets_ZToNuNu_pythia8": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/mspanrin-EWKZ2Jets_ZToNuNu_pythia8_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/mspanrin-EWKZ2Jets_ZToNuNu_pythia8_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DY3JetsToLL_M_50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY3JetsToLL_M_50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY3JetsToLL_M_50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DY4JetsToLL_M_50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY4JetsToLL_M_50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DY4JetsToLL_M_50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "EWKZ2Jets_ZToLL_M_50_pythia8": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/mspanrin-EWKZ2Jets_ZToLL_M_50_pythia8_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/mspanrin-EWKZ2Jets_ZToLL_M_50_pythia8_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DYJetsToLL_M_50_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_50_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_50_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "DYJetsToLL_M_150_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": "161105"
+                "time": "161231"
             }, 
-            "das_url": "/DYJetsToLL_M-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_150_madgraphMLM_MCSpring16_161105-94889142b471fe9da69e5bcd34c84999/USER", 
+            "das_url": "/DYJetsToLL_M-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-DYJetsToLL_M_150_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/DYJetsToLL_M-150_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }
@@ -162,101 +171,177 @@
         "ST_t_channel_top_4f_leptonDecays_powheg": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/mspanrin-ST_t_channel_top_4f_leptonDecays_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "ST_t_channel_antitop_4f_leptonDecays_powheg": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/mspanrin-ST_t_channel_antitop_4f_leptonDecays_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "ST_tW_antitop_5f_inclusiveDecays_powheg": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/mspanrin-ST_tW_antitop_5f_inclusiveDecays_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "ST_tW_top_5f_inclusiveDecays_powheg": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/mspanrin-ST_tW_top_5f_inclusiveDecays_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v2/MINIAODSIM", 
             "prod_label": "MCSpring16"
+        }
+    }, 
+    "TT": {
+        "TT_powheg": {
+            "step_1": {
+                "status": "done", 
+                "time": "161231"
+            }, 
+            "das_url": "/TT_TuneCUETP8M1_13TeV-powheg-pythia8/mspanrin-TT_powheg_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
+            "datacard": "/TT_TuneCUETP8M1_13TeV-powheg-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext4-v1/MINIAODSIM", 
+            "prod_label": "MCSpring16"
+        }
+    }, 
+    "DATAET": {
+        "SingleElectronRun2016C_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016C_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016C-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016B_23Sep2016_v2MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016B_23Sep2016_v2MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016B-23Sep2016-v2/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016F_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016F_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016F-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016G_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016G_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016G-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016E_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016E_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016E-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016B_23Sep2016_v3MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016B_23Sep2016_v3MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016B-23Sep2016-v3/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleElectronRun2016D_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleElectron/mspanrin-SingleElectronRun2016D_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleElectron/Run2016D-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
         }
     }, 
     "W": {
         "WJetsToLNu_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-WJetsToLNu_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "W2JetsToLNu_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-W2JetsToLNu_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "EWKWPlus2Jets_WToLNu_M_50_pythia8": {
             "step_1": {
                 "status": "done", 
-                "time": "161107"
+                "time": "161231"
             }, 
-            "das_url": "/EWKWPlus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/mspanrin-EWKWPlus2Jets_WToLNu_M_50_pythia8_MCSpring16_161107-27d8d2fc80276a6016b1988a8ef5454e/USER", 
+            "das_url": "/EWKWPlus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/mspanrin-EWKWPlus2Jets_WToLNu_M_50_pythia8_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/EWKWPlus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "W1JetsToLNu_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-W1JetsToLNu_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "W4JetsToLNu_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-W4JetsToLNu_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "W3JetsToLNu_madgraphMLM": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161231"
             }, 
-            "das_url": "", 
+            "das_url": "/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/mspanrin-W3JetsToLNu_madgraphMLM_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v1/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }, 
         "EWKWMinus2Jets_WToLNu_M_50_pythia8": {
             "step_1": {
                 "status": "done", 
-                "time": "161107"
+                "time": "161231"
             }, 
-            "das_url": "/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/mspanrin-EWKWMinus2Jets_WToLNu_M_50_pythia8_MCSpring16_161107-27d8d2fc80276a6016b1988a8ef5454e/USER", 
+            "das_url": "/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/mspanrin-EWKWMinus2Jets_WToLNu_M_50_pythia8_MCSpring16_161231-6ae50ee0d1b2b11c34513d8372d74dfb/USER", 
             "datacard": "/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0-v2/MINIAODSIM", 
             "prod_label": "MCSpring16"
         }
@@ -264,7 +349,7 @@
     "QCD": {
         "QCD_Pt_20toInf_MuEnrichedPt15_pythia8": {
             "step_1": {
-                "status": "done", 
+                "status": "", 
                 "time": ""
             }, 
             "das_url": "", 
@@ -272,116 +357,134 @@
             "prod_label": "MCSpring16"
         }
     }, 
-    "DATA": {
-        "SingleMuonRun2016B_PromptReco_v2MINIAOD": {
+    "DATAT": {
+        "TauRun2016E_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": "161112"
+                "time": "161225"
             }, 
-            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016B_PromptReco_v2MINIAOD_DATA_161112-fdd8a08993bf292ded124ba21b1883ad/USER", 
-            "datacard": "/SingleMuon/Run2016B-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016E_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016E-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "TauRun2016B_PromptReco_v2MINIAOD": {
+        "TauRun2016F_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161225"
             }, 
-            "das_url": "/Tau/mspanrin-TauRun2016B_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
-            "datacard": "/Tau/Run2016B-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016F_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016F-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "SingleMuonRun2016D_PromptReco_v2MINIAOD": {
+        "TauRun2016B_23Sep2016_v3MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": "161031"
+                "time": "161225"
             }, 
-            "das_url": "", 
-            "datacard": "/SingleMuon/Run2016D-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016B_23Sep2016_v3MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016B-23Sep2016-v3/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "SingleMuonRun2016C_PromptReco_v2MINIAOD": {
+        "TauRun2016C_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": "161031"
+                "time": "161225"
             }, 
-            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016C_PromptReco_v2MINIAOD_DATA_161031-fdd8a08993bf292ded124ba21b1883ad/USER", 
-            "datacard": "/SingleMuon/Run2016C-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016C_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016C-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "TauRun2016D_PromptReco_v2MINIAOD": {
+        "TauRun2016B_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161225"
             }, 
-            "das_url": "/Tau/mspanrin-TauRun2016D_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
-            "datacard": "/Tau/Run2016D-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016B_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016B-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "SingleElectronRun2016D_PromptReco_v2MINIAOD": {
+        "TauRun2016D_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161225"
             }, 
-            "das_url": "", 
-            "datacard": "/SingleElectron/Run2016D-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016D_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016D-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }, 
-        "SingleElectronRun2016B_PromptReco_v2MINIAOD": {
+        "TauRun2016G_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": ""
+                "time": "161225"
             }, 
-            "das_url": "", 
-            "datacard": "/SingleElectron/Run2016B-PromptReco-v2/MINIAOD", 
-            "prod_label": "DATA"
-        }, 
-        "SingleMuonRun2016G_PromptReco_v1MINIAOD": {
-            "step_1": {
-                "status": "done", 
-                "time": "161102"
-            }, 
-            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016G_PromptReco_v1MINIAOD_DATA_161102-fdd8a08993bf292ded124ba21b1883ad/USER", 
-            "datacard": "/SingleMuon/Run2016G-PromptReco-v1/MINIAOD", 
-            "prod_label": "DATA"
-        }, 
-        "TauRun2016C_PromptReco_v2MINIAOD": {
-            "step_1": {
-                "status": "done", 
-                "time": ""
-            }, 
-            "das_url": "/Tau/mspanrin-TauRun2016C_PromptReco_v2MINIAOD_DATA_161005-65fc7dfbbecbe0b92df1c82ef853e001/USER", 
-            "datacard": "/Tau/Run2016C-PromptReco-v2/MINIAOD", 
-            "prod_label": "DATA"
-        }, 
-        "SingleElectronRun2016C_PromptReco_v2MINIAOD": {
-            "step_1": {
-                "status": "done", 
-                "time": ""
-            }, 
-            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016C_PromptReco_v2MINIAOD_DATA_161031-fdd8a08993bf292ded124ba21b1883ad/USER", 
-            "datacard": "/SingleElectron/Run2016C-PromptReco-v2/MINIAOD", 
+            "das_url": "/Tau/mspanrin-TauRun2016G_23Sep2016_v1MINIAOD_DATA_161225-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/Tau/Run2016G-23Sep2016-v1/MINIAOD", 
             "prod_label": "DATA"
         }
     }, 
-    "Signal": {
-        "VBFHToTauTau_M125_powheg": {
+    "DATAMT": {
+        "SingleMuonRun2016G_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": "161217"
+                "time": "161224"
             }, 
-            "das_url": "/VBFHToTauTau_M125_13TeV_powheg_pythia8/mspanrin-VBFHToTauTau_M125_powheg_MCSpring16_reHLT_161217-9967f9130071d148326554b39503358d/USER", 
-            "datacard": "/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14-v1/MINIAODSIM", 
-            "prod_label": "MCSpring16_reHLT"
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016G_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016G-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
         }, 
-        "GluGluHToTauTau_M125_powheg": {
+        "SingleMuonRun2016F_23Sep2016_v1MINIAOD": {
             "step_1": {
                 "status": "done", 
-                "time": "161115"
+                "time": "161224"
             }, 
-            "das_url": "/GluGluHToTauTau_M125_13TeV_powheg_pythia8/mspanrin-GluGluHToTauTau_M125_powheg_MCSpring16_reHLT_161115-27d8d2fc80276a6016b1988a8ef5454e/USER", 
-            "datacard": "/GluGluHToTauTau_M125_13TeV_powheg_pythia8/RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14-v1/MINIAODSIM", 
-            "prod_label": "MCSpring16_reHLT"
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016F_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016F-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleMuonRun2016E_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016E_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016E-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleMuonRun2016D_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016D_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016D-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleMuonRun2016C_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016C_23Sep2016_v1MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016C-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleMuonRun2016B_23Sep2016_v3MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161224"
+            }, 
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016B_23Sep2016_v3MINIAOD_DATA_161224-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016B-23Sep2016-v3/MINIAOD", 
+            "prod_label": "DATA"
+        }, 
+        "SingleMuonRun2016B_23Sep2016_v1MINIAOD": {
+            "step_1": {
+                "status": "done", 
+                "time": "161223"
+            }, 
+            "das_url": "/SingleMuon/mspanrin-SingleMuonRun2016B_23Sep2016_v1MINIAOD_DATA_161223-cb7aeceb069955e45c59dedb76f7f27f/USER", 
+            "datacard": "/SingleMuon/Run2016B-23Sep2016-v1/MINIAOD", 
+            "prod_label": "DATA"
         }
     }
 }

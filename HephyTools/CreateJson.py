@@ -45,7 +45,7 @@ for data in raw_data:
 		if not key in dsets.get(current,''):
 
 			data_struct[current][key] = {'datacard':data.replace('\n','')}
-			data_struct[current][key]['step_1'] = {'status':'open', 'time':''}
+			data_struct[current][key]['step_1'] = {'status':'', 'time':''}
 			data_struct[current][key]['das_url'] = ''
 			data_struct[current][key]['prod_label'] = prod_label
 

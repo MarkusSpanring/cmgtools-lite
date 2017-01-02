@@ -271,26 +271,21 @@ class CMCHandler():
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', help='Tag of dataset to copy', type=str, metavar = 'TAG', required = True)
-    parser.add_argument('-u', help='dpns-Username who createt dataset', type=str, metavar = 'dpns-USERNAME', required = True)
-    parser.add_argument('-f', help='Force overwrite', action='store_true')
-    parser.add_argument('-m', help='Merge only', action='store_true')
-    parser.add_argument('-t', help='', type=str, metavar = 'RUNTYPE',choices = ['mc','data'], default = 'mc')
+    parser.add_argument('--sample', dest = 'sample', help='Tag of dataset to copy', type=str, metavar = 'TAG', required = True)
+    parser.add_argument('--user', dest='user', help='dpns-Username who createt dataset', type=str, metavar = 'dpns-USERNAME', required = True)
+    parser.add_argument('-f', dest='force', help='Force overwrite', action='store_true')
+    parser.add_argument('-m', dest='merge', help='Merge only', action='store_true')
+    parser.add_argument('-t', dest='type', help='', type=str, metavar = 'RUNTYPE',choices = ['mc','data'], default = 'mc')
 
-    args = vars(parser.parse_args())
+    args = parser.parse_args()
 
-    Dset = args['d']
-    rtype = args['t']
-    dpnsUser = args['u']
-    merge = args['m']
-
-    source = '/dpm/oeaw.ac.at/home/cms/store/user/{0}/cmgTuples/{1}'.format( dpnsUser, Dset )
-    dest = '/data/higgs/data_2016/cmgTuples/{0}'.format( Dset )
+    source = '/dpm/oeaw.ac.at/home/cms/store/user/{0}/cmgTuples/{1}'.format( args.user, args.sample )
+    dest = '/data/higgs/data_2016/cmgTuples/{0}'.format( args.sample )
 
     ch = CMCHandler(source, dest)
     if not merge:
         ch.copyFiles(ftype = 'tree',
-                     recreate = args.get('f',False))
+                     recreate = args.force)
 
     miss = ch.validateCopy()
     if miss != []:
@@ -312,7 +307,7 @@ if __name__ == '__main__':
                      max_proc=8)
     
     ch.mergeTrees()   
-    ch.cleanup(rtype = rtype)
+    ch.cleanup(rtype = args.type)
 
 
 

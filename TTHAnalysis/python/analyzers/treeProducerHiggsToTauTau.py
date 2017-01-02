@@ -60,7 +60,7 @@ higgsToTauTau_collections.update({
 #            "otherLeptons"    : NTupleCollection("LepOther", leptonTypeSusy, 8, help="Leptons after the preselection"),
             "selectedTaus"    : NTupleCollection("tau", tauTypeH, 20, help="Taus after the preselection"),
 #            "selectedIsoTrack"    : NTupleCollection("track", isoTrackType, 50, help="isoTrack, sorted by pt"),
-            ##------------------------------------------------
+            #----------------------------------------------
             "cleanJetsAll"       : NTupleCollection("jet",     jetTypeH, 100, help="Jets after full selection and cleaning, sorted by pt"),
 #            "cleanJetsFwd"    : NTupleCollection("JetFwd",  jetTypeSusy, 25, help="Forward jets after full selection and cleaning, sorted by pt"),            
 #mf            "fatJets"         : NTupleCollection("FatJet",  fatJetType,  15, help="AK8 jets, sorted by pt"),

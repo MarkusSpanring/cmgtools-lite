@@ -19,7 +19,7 @@ os.system("tar czf python.tar.gz --dereference --directory $CMSSW_BASE python --
 config.JobType.inputFiles = ['FrameworkJobReport.xml','heppy_config.py','heppy_crab_script.py','python.tar.gz' ]
 #config.JobType.outputFiles = ['output.log.tgz'] # susySingleLepton.root is automatically send because of the pset file
 config.JobType.outputFiles = ['SkimReport.txt']
-#config.JobType.outputFiles = ['RLTInfo.root']
+config.JobType.outputFiles = ['RLTInfo.root']
 
 config.section_("Data")
 config.Data.ignoreLocality = False
